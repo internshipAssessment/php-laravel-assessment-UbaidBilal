@@ -8,13 +8,12 @@
 -- Return: user_id, name, order_count
 -- Sort: order_count DESC
 -- TODO: Write the SQL below
-SELECT
-  -- TODO
+SELECT * From users where orders>3 AND created_at(30) with user_id,users_name,order_count;
+  
 ;
 
 -- Task 2 — Products never ordered
 -- Return: id, name of products that appear in ZERO order_items
 -- TODO: Write the SQL below
-SELECT
-  -- TODO
+SELECT * From order_items where product_id =='' with products_id,products_name;
 ;
