@@ -1,4 +1,5 @@
 <?php
+<?php
 /**
  * Laravel 10+ pseudocode stubs.
  * Paste your code in the TODO blocks. You can run these inside a Laravel Tinker session
@@ -14,7 +15,7 @@ use App\Models\Order;
 // Order by created_at desc
 // Save result in $orders
 // ------------------------------------------------------------
-$orders = null; // TODO: assign Eloquent query result to $orders
+$orders = Order::orders->user,items.product where (total_amount > 100) Desc created_at ; // TODO: assign Eloquent query result to $orders
 
 // ------------------------------------------------------------
 // Task 2 — FormRequest rules for storing a User
@@ -25,7 +26,10 @@ $orders = null; // TODO: assign Eloquent query result to $orders
 // ------------------------------------------------------------
 function userStoreRules(): array
 {
-    // TODO: return array of Laravel validation rules
+    name(2-60) required;
+    email(unique) valid required;
+    password(8) required confirmed;
+
     return [];
 }
 
@@ -34,8 +38,8 @@ function userStoreRules(): array
 // Add this method into App\Models\Order
 // Filters created_at to last $days days.
 // ------------------------------------------------------------
-/*
-namespace App\Models;
+
+namespace App\Models;    
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
@@ -44,8 +48,9 @@ use Illuminate\Support\Carbon;
 class Order extends Model
 {
     // TODO: paste the scope here
-    // public function scopeRecentDays(Builder $query, int $days)
-    // {
-    // }
+     public function scopeRecentDays(Builder $query, int $days)
+    {
+
+    }
 }
-*/
+
